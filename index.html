@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Composition</title>
+  <style>
+    body {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      background-color: #000;
+    }
+
+    .container {
+      display: grid;
+      grid-template: 414px 130px 155px 20px / 320px 198px 153px 50px;
+      gap: 9px;
+      background-color: #000;
+      width: 748px;
+      border: 10px solid grey;
+    }
+    #div1 {
+      background-color: #E72F24;
+    }
+    #div2 {
+      background-color: #F0F1EC;
+      grid-column: span 3;
+    }
+    #div3 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    #div4 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+      grid-column: span 2;
+    }
+    #div5 {
+      background-color: #004592;
+      border-bottom: 10px solid #000;
+    }
+    #div6 {
+      background-color: #F0F1EC;
+      grid-row: span 2;
+    }
+    #div7 {
+      background-color: #F0F1EC;
+    }
+    #div8 {
+      background-color: #F9D01E;
+    }
+    #div9 {
+      background-color: #232629;
+    }
+    h1 {
+      color: white;
+      font-size: 3em;
+      margin: 0;
+      padding: 0;
+    }
+
+  </style>
+</head>
+
+<body>
+  <h1>A Mondorian Composition created in CSS using Grid & Flexbox</h1>
+  <div class="container">
+    <div id="div1"></div>
+    <div id="div2"></div>
+    <div id="div3"></div>
+    <div id="div4"></div>
+    <div id="div5"></div>
+    <div id="div6"></div>
+    <div id="div7"></div>
+    <div id="div8"></div>
+    <div id="div9"></div>
+
+  </div>
+</body>
+
+</html>
